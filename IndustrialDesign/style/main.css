@@ -1,0 +1,633 @@
+/*----- Normalize -----*/
+@import url(sanitize.css);
+
+/*----- Fonts -----*/
+@import url(fonts.css);
+
+
+
+body {
+	background-color: #272f45;
+	padding: 0 15px;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+/*----- Header Begin -----*/
+.header {
+	margin: 60px 0;
+}
+	.header__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header__search {
+		width: 176px;
+		background-color: transparent;
+		background: url(../images/search.png) no-repeat;
+		border: 0;
+		border-bottom: 3px solid #63757e;
+		color: #92a1a9;
+		font-family: "HK Grotesk Light";
+		font-size: 24px;
+		padding-left: 34px;
+		padding-bottom: 6px;
+	}
+		.header__search::-webkit-input-placeholder {
+			color: #92a1a9;
+		}
+		.header__search::-moz-placeholder {
+			color: #92a1a9;  
+		}
+		.header__search:-ms-input-placeholder {  
+			color: #92a1a9;  
+		}
+/*----- Header End -----*/
+
+/*----- Content Begin -----*/
+.gina {
+	position: relative;
+	max-width: 100%;
+	min-height: 690px;
+	background-image: url("../images/Gina BG.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-bottom: 40px;
+	padding: 70px 60px;
+}
+	.heading {
+		color: #fff;
+		font-family: "League Spartan";
+		text-transform: uppercase;
+	}
+		.gina__heading {
+			font-size: 80px;
+			margin-bottom: 15px;
+		}
+	.text {
+		color: #fff;
+		font-family: "HK Grotesk Light";
+	}
+		.gina__text {
+			width: 360px;
+			font-size: 32px;
+			margin-top: 15px;
+		}
+	.button {
+		text-decoration: none;
+		display: inline-block;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: "League Spartan";
+		border: 3px solid #eec9a2;
+	}
+		.button:hover {
+			color: #000;
+			background-color: #eec9a2;
+			transition: all 0.5s;
+		}
+		.gina__button {
+			text-transform: none;
+			font-family: "HK Grotesk Light";
+			font-size: 24px;
+			margin-top: 85px;
+			padding: 12px 25px;
+		}
+	.badge {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+.container__flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.beoplay {
+	flex-grow: 1;
+	width: 45%;
+	min-height: 520px;
+	background-image: url("../images/Beoplay A1 product.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+}
+	.beoplay__heading {
+		font-size: 48px;
+		text-align: right;
+		margin-bottom: 10px;
+	}
+	.beoplay__text {
+		font-size: 24px;
+		text-align: right;
+		margin-top: 10px;
+	}
+	.beoplay__button {
+		font-size: 18px;
+		float: right;
+		margin-top: 10px;
+		padding: 13px 38px 7px 38px;
+	}
+
+.leica {
+	flex-grow: 1;
+	width: 45%;
+	min-height: 520px;
+	background-image: url("../images/Leica MP product.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+}
+	.leica__heading {
+		font-size: 48px;
+		margin-bottom: 10px;
+	}
+	.leica__text {
+		font-size: 24px;
+		margin-top: 10px;
+		margin-right: 60px;
+	}
+	.leica__button {
+		font-size: 18px;
+		margin-top: 10px;
+		padding: 13px 38px 7px 38px;
+	}
+
+.molekule {
+	flex-grow: 1;
+	width: 30%;
+	min-height: 440px;
+	background-image: url("../images/Molekule product.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+}
+	.molekule__heading {
+		font-size: 36px;
+		margin: 10px 0;
+	}
+	.molekule__text {
+		font-size: 16px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.molekule__button {
+		font-size: 18px;
+		margin-top: 10px;
+		padding: 13px 38px 7px 38px;
+	}
+
+.p9 {
+	flex-grow: 1;
+	width: 30%;
+	min-height: 440px;
+	background-image: url("../images/P9 Signature product.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+}
+	.p9__heading {
+		font-size: 36px;
+		margin: 10px 0;
+	}
+	.p9__text {
+		font-size: 16px;
+		margin-top: 230px;
+		margin-bottom: 10px;
+	}
+	.p9__button {
+		font-size: 18px;
+		margin-top: 10px;
+		padding: 13px 38px 7px 38px;
+	}
+
+.dr2 {
+	flex-grow: 1;
+	width: 30%;
+	min-height: 440px;
+	background-image: url("../images/DR-II product.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+}
+	.dr2__heading {
+		font-size: 36px;
+		margin: 10px 0;
+	}
+	.dr2__text {
+		font-size: 16px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.dr2__button {
+		font-size: 18px;
+		margin-top: 10px;
+		padding: 13px 38px 7px 38px;
+	}
+
+
+.newsletter {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 60px 0;
+}
+	.newsletter__heading {
+		color: #92a1a9;
+		font-family: "HK Grotesk Light";
+		font-size: 36px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+	.newsletter__text {
+		max-width: 800px;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		color: #7f919b;
+		font-size: 18px;
+	}
+	.newsletter__form {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+		.newsletter__email {
+			width: 100%;
+			border: 3px solid #92a1a9;
+			color: #92a1a9;
+			text-align: center;
+			font-family: "HK Grotesk Light";
+			font-size: 24px;
+			margin-bottom: 20px;
+			padding: 12px 30px;
+		}
+		.newsletter__email::-webkit-input-placeholder {
+			color: #92a1a9;
+		}
+		.newsletter__email::-moz-placeholder {
+			color: #92a1a9;  
+		}
+		.newsletter__email:-ms-input-placeholder {  
+			color: #92a1a9;  
+		}
+		.newsletter__button {
+			width: 100%;
+			border-color: #82c9d8;
+			font-size: 18px;
+			padding: 20px 30px 15px 30px;
+			letter-spacing: 1px;
+		}
+			.newsletter__button:hover {
+				background-color: #82c9d8;
+			}
+/*----- Content End -----*/
+
+
+/*----- Footer Begin -----*/
+.footer {
+	text-align: center;
+	margin: 80px 0;
+}
+	.footer__nav {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+		.footer__nav__item {
+			color: #92a1a9;
+			font-family: "HK Grotesk Light";
+			font-size: 24px;
+		}
+			.footer__nav__item:not(:last-child):after {
+				content: "•";
+				padding: 0 15px;
+			}
+	.footer__text {
+		font-size: 18px;
+		color: #92a1a9;
+	}
+/*----- Footer End -----*/
+
+
+
+/*---------------------------- Adaptive ----------------------------*/
+/*----- Width: 987px -----*/
+@media screen and (max-width: 987px) {
+	.beoplay {
+		width: 480px;
+		margin-right: 0;
+		padding: 30px 30px;
+	}
+		.beoplay__heading {
+			margin-top: 20px;
+		}
+
+	.leica {
+		width: 480px;
+		padding: 30px 30px;
+	}
+		.leica__heading {
+			margin-top: 20px;
+		}
+
+	.p9 {
+		margin-right: 0;
+	}
+
+	.dr2 {
+		width: 100%;
+	}
+}
+
+/*----- Width: 720px -----*/
+@media screen and (max-width: 720px) {
+	.molekule {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.p9 {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+/*----- Width: 600px -----*/
+@media screen and (max-width: 600px) {
+.header {
+	margin: 40px 0;
+}
+	.header__logo {
+		width: 220px;
+	}
+	.header__search {
+		width: 150px;
+		font-size: 18px;
+	}
+
+	.gina {
+		min-height: 420px;
+		margin-bottom: 30px;
+		padding: 30px 30px;
+	}
+		.gina__heading {
+			font-size: 60px;
+			margin-top: 20px;
+			margin-bottom: 15px;
+		}
+		.gina__text {
+			width: 320px;
+			font-size: 24px;
+		}
+		.gina__button {
+			font-size: 22px;
+			margin-top: 55px;
+			padding: 8px 21px;
+		}
+	.badge {
+		width: 90px;
+		top: 30px;
+		right: 30px;
+	}
+
+	.beoplay {
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+		.beoplay__heading {
+			font-size: 38px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		.beoplay__text {
+			font-size: 20px;
+		}
+
+	.leica {
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+		.leica__heading {
+			font-size: 38px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		.leica__text {
+			font-size: 20px;
+		}
+
+	.molekule {
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+		.molekule__text {
+			margin-top: 10px;
+		}
+
+	.p9 {
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+		.p9__text {
+			margin-top: 210px;
+		}
+
+	.dr2 {
+		min-height: 420px;
+		margin-bottom: 30px;
+	}
+		.dr2__text {
+			margin-top: 10px;
+		}
+
+	.newsletter {
+		margin: 0 0;
+	}
+		.newsletter__heading {
+			font-size: 32px;
+		}
+		.newsletter__text {
+			max-width: 500px;
+			padding-bottom: 40px;
+		}
+
+.footer {
+	margin: 60px 0;
+}
+	.footer__nav {
+		flex-direction: column;
+		padding: 0;
+	}
+		.footer__nav__item {
+			color: #92a1a9;
+			font-family: "HK Grotesk Light";
+			font-size: 24px;
+			padding-bottom: 10px;
+		}
+			.footer__nav__item:not(:last-child):after {
+				content: normal;
+				padding: 0 0;
+			}
+}
+
+/*----- Width: 480px -----*/
+@media screen and (max-width: 480px) {
+	.header__container {
+		flex-direction: column;
+	}
+		.header__logo {
+			margin-bottom: 30px;
+		}
+		.header__search {
+			width: 230px;
+		}
+
+	.gina {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.gina__heading {
+			font-size: 46px;
+			margin-top: 0;
+		}
+		.gina__text {
+			width: 240px;
+			font-size: 18px;
+		}
+		.gina__button {
+			font-size: 20px;
+			margin-top: 40px;
+		}
+		.badge {
+			display: none;
+		}
+
+	.beoplay {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.beoplay__heading {
+			font-size: 30px;
+		}
+		.beoplay__text {
+			font-size: 18px;
+		}
+
+	.leica {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.leica__heading {
+			font-size: 30px;
+		}
+		.leica__text {
+			font-size: 18px;
+		}
+
+	.molekule {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.molekule__heading {
+			font-size: 30px;
+		}
+		.molekule__text {
+			margin-top: 0;
+		}
+
+	.p9 {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.p9__heading {
+			font-size: 30px;
+		}
+		.p9__text {
+			margin-top: 150px;
+		}
+
+	.dr2  {
+		min-height: 310px;
+		margin-bottom: 20px;
+		padding: 20px 20px;
+	}
+		.dr2__heading {
+			font-size: 30px;
+		}
+		.dr2__text {
+			margin-top: 0;
+		}
+
+	.newsletter__heading {
+		font-size: 30px;
+	}
+
+	.footer {
+		margin: 40px 0;
+	}
+		.footer__nav__item {
+			font-size: 22px;
+		}
+}
+
+/*----- Width: 320px -----*/
+@media screen and (max-width: 320px) {
+	.gina__text {
+		width: 170px;
+	}
+	.button {
+		color: #000;
+		background-color: #eec9a2;
+	}
+		.gina__button {
+			font-family: "League Spartan";
+		}
+}
