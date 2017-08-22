@@ -32,6 +32,8 @@ a {
 		width: 176px;
 		background-color: transparent;
 		background: url(../images/search.png) no-repeat;
+		-ms-background-position-y: 3px;
+		background-position-y: 3px;
 		border: 0;
 		border-bottom: 3px solid #63757e;
 		color: #92a1a9;
@@ -40,6 +42,15 @@ a {
 		padding-left: 34px;
 		padding-bottom: 6px;
 	}
+		.header__search:focus {
+			outline: none;
+			width: 220px;
+			border-color: #eec9a2;
+			transition: 0.75s;
+		}
+		.header__search:not(:focus) {
+			transition: 0.75s;
+		}
 		.header__search::-webkit-input-placeholder {
 			color: #92a1a9;
 		}
@@ -315,6 +326,7 @@ a {
 			font-size: 18px;
 			padding: 20px 30px 15px 30px;
 			letter-spacing: 1px;
+			cursor: pointer;
 		}
 			.newsletter__button:hover {
 				background-color: #82c9d8;
@@ -405,6 +417,10 @@ a {
 	}
 	.header__search {
 		width: 150px;
+		background-size: 18px;
+		-ms-background-position-y: 2px;
+		background-position-y: 2px;
+		padding-left: 28px;
 		font-size: 18px;
 	}
 
@@ -524,10 +540,13 @@ a {
 		.header__search {
 			width: 230px;
 		}
+			.header__search:focus {
+				width: 172px;
+			}
 
 	.gina {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.gina__heading {
@@ -548,7 +567,7 @@ a {
 
 	.beoplay {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.beoplay__heading {
@@ -560,7 +579,7 @@ a {
 
 	.leica {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.leica__heading {
@@ -572,7 +591,7 @@ a {
 
 	.molekule {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.molekule__heading {
@@ -584,7 +603,7 @@ a {
 
 	.p9 {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.p9__heading {
@@ -596,7 +615,7 @@ a {
 
 	.dr2  {
 		min-height: 310px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 		padding: 20px 20px;
 	}
 		.dr2__heading {
